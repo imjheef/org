@@ -1,0 +1,14 @@
+.TextField{
+    margin: 24px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.TextField label{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    margin: 12px 0;
+}
+.TextField input {
+    max-width: 80%;
+} 
