@@ -1,14 +1,14 @@
 import './App.css';
 import Header from './components/Header/Header';
-import "./components/Form/form"
+import './components/Form/form';
 import Form from './components/Form/form';
-const App =()=> {
+const App = () => {
 	return (
-		<div>
-			<Header />
-			<Form/>
-		</div>
+			<div>
+				<Header />
+				<Form />
+			</div>
 	);
-}
+};
 
 export default App;
