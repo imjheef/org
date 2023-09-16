@@ -1,0 +1,14 @@
+.Button {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    padding: 1rem  2rem;
+    background-color: #6278f7;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.Button:hover{
+    filter: saturate(5);
+}
