@@ -1,15 +1,16 @@
 import './OptionList.css';
 
 const OptionList = () => {
-	const teams = [
-		'Programming',
-		'Front End',
-		'Data Science',
-		'DevOps',
-		'UX & Design',
-		'Mobile',
-		'Innovation & Management',
-	];
+    const teams = [
+			'Select a Team',
+			'Programming',
+			'Front End',
+			'Data Science',
+			'DevOps',
+			'UX & Design',
+			'Mobile',
+			'Innovation & Management',
+		];
 
 	return (
 		<div className='OptionList'>
