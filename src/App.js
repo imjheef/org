@@ -5,16 +5,19 @@ import Header from "./components/Header/Header";
 import Form from "./components/Form/form";
 import MyOrg from "./components/MyOrg/MyOrg";
 
-
 const App = () => {
+
+
+  const [initialForm, updateForm] = useState(true)
+  const updateFormShow = () =>{
+    updateForm(!initialForm)
+  }
   
-	// const [show, updateShow] = useState(true)
-	
-	return (
+  return (
     <div>
       <Header />
-      <Form />
-      <MyOrg />
+      {initialForm === true ? <Form/> : <div></div>}
+      <MyOrg updateFormShow={updateFormShow}/>
     </div>
   );
 };
