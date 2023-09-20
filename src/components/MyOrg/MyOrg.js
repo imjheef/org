@@ -1,27 +1,21 @@
-import { useState } from 'react';
-import '../MyOrg/MyOrg.css';
+import { useState } from "react";
+import "../MyOrg/MyOrg.css";
+
 
 const MyOrg = () => {
-	console.log();
+  const [show, updateShow] = useState(true);
 
-	// const [name, updateName] = useState("Jheferson")
-	const [name, updateName] = useState(true)
+  const handleShow = () => {
+    console.log("Show/Hide element", !show);
+    updateShow(!show);
+  };
 
-	const handleClick = () => {
-		console.log('Show/Hide element');
-		updateName(!name)
-	};
-
-	return (
-		<section className='orgSection'>
-			<h3 className='title'>My organization {name} </h3>
-			<img
-				onClick={handleClick}
-				src='/img/add-btn.svg'
-				alt='add img'
-			/>
-		</section>
-	);
+  return (
+    <section className="orgSection">
+      <h3 className="title">My organization </h3>
+      <img onClick={handleShow} src="/img/add-btn.svg" alt="add img" />
+    </section>
+  );
 };
 
 export default MyOrg;
