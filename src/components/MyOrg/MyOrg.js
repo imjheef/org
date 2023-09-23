@@ -1,14 +1,8 @@
-import { useState } from "react";
+// import { useState } from "react";
 import "../MyOrg/MyOrg.css";
 
 
 const MyOrg = (props) => {
-  // const [show, updateShow] = useState(true);
-
-  // const handleShow = () => {
-  //   console.log("Show/Hide element", !show);
-  //   updateShow(!show);
-  // };
 
   return (
     <section className="orgSection">

@@ -1,16 +1,26 @@
-import "./TextField.css"
+import { useState } from "react";
+import "./TextField.css";
 
 const TextField = (props) => {
-    console.log('Datos: ', props);
-		return (
-			<div className='TextField'>
-				<label>{props.title}</label>
-				<input
-					placeholder={`${props.placeholder}...`}
-					required={props.required}
-				/>
-			</div>
-		);
-}
+  const [value, updateValue] = useState("");
+  // const [value, updateTitle] = useState("");
+  // const [value, updatePhoto] = useState("");
 
-export default TextField 
+  const handleValueUpdate = (e) => {
+    console.log("cambio", e.target.value);
+    updateValue(e.target.value);
+  };
+  return (
+    <div className="TextField">
+      <label>{props.title}</label>
+      <input
+        placeholder={`${props.placeholder}...`}
+        required={props.required}
+        value={value}
+        onChange={handleValueUpdate}
+      />
+    </div>
+  );
+};
+
+export default TextField;
